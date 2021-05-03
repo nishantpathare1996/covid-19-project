@@ -15,6 +15,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}})=> {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
                         <Typography varient="h5">
+                         
                             <CountUp start={0} end={confirmed.value} duration={0.5} seperator=","/>
                             </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
